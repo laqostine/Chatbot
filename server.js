@@ -4,7 +4,7 @@ const expressWs = require('express-ws')(express());
 const app = expressWs.app;
 
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-const API_KEY = "AIzaSyCt4F5c3OBBkmUNRPo_Go4lbR7G8QQK7MA";
+const API_KEY = "";
 const MODEL_NAME = "gemini-1.0-pro";
 const genAI = new GoogleGenerativeAI(API_KEY);
 const model = genAI.getGenerativeModel({ model: MODEL_NAME });
